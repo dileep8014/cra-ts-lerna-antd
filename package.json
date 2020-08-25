@@ -1,5 +1,5 @@
 {
-  "name": "cra-ts",
+  "name": "cra-ts-lerna-antd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
