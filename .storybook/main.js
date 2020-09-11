@@ -54,5 +54,15 @@ module.exports = {
         ]
       }
     }
+  },
+  webpackFinal: (config) => {
+    const {
+      module: {
+        rules: [, , , , , , { oneOf }],
+      },
+    } = config;
+    const babelLoader = oneOf.find(({ test }) => new RegExp(test).test( ".ts"));
+    babelLoader.include = [/packages\/(.*)\/src/, /src/];
+    return config;
   }
 }
