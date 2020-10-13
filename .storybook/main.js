@@ -1,7 +1,5 @@
 module.exports = {
   "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../packages/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
@@ -27,42 +25,14 @@ module.exports = {
       }
     }
   ],
-  webpack: (webpackConfig, options) => {
-    return {
-      ...webpackConfig,
-      module: {
-        ...webpackConfig.module,
-        rules: [
-          ...(webpackConfig.module.rules || []),
-          {
-            test: "/\.less$/",
-            use: [
-              { loader: "style-loader", options: {} },
-              { loader: "css-loader", options: {} },
-              {
-                loader: "less-loader", options:{
-                  lessOptions: {
-                    javascriptEnabled: true,
-                    modules: {
-                      localIdentName: "[name]__[local]___[hash:base64:5]"
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
   webpackFinal: (config) => {
     const {
       module: {
         rules: [, , , , , , { oneOf }],
       },
     } = config;
-    const babelLoader = oneOf.find(({ test }) => new RegExp(test).test( ".ts"));
-    babelLoader.include = [/packages\/(.*)\/src/, /src/];
+    const babelLoader = oneOf.find(({ test }) => new RegExp(test).test(".ts"));
+    babelLoader.include = [/packages\/(.*)\/src/];
     return config;
   }
 }

@@ -1,0 +1,51 @@
+.container {
+  box-shadow: none;
+
+  .searchIcon {
+    cursor: pointer;
+  }
+
+  :global(.ant-input) {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.large {
+  width: 680px;
+  height: 36px;
+  border-radius: 18px;
+  padding: 0 32px;
+  :local(.searchIcon) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.small {
+  width: 274px;
+  height: 28px;
+  border-radius: 2px;
+  padding: 0 16px;
+  :local(.searchIcon) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.mini {
+  width: 212px;
+  height: 24px;
+  padding: 0 8px;
+  :local(.searchIcon) {
+    width: 14px;
+    height: 14px;
+  }
+  :global(.ant-input) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

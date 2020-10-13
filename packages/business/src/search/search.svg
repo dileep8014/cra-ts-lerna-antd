@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1em" height="1em" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>顶部栏/搜索</title>
+    <g id="顶部栏/搜索" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+        <g id="编组" transform="translate(4.000000, 3.000000)">
+            <circle id="椭圆形" stroke="#ABACB3" stroke-width="2" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " cx="8" cy="8" r="7"></circle>
+            <rect id="矩形" fill="#ABACB3" transform="translate(14.000000, 15.000000) rotate(-38.000000) translate(-14.000000, -15.000000) " x="13" y="12" width="2" height="6" rx="1"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "name": "business",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "lucaslz <llzqingdao2012@gmail.com>",
+  "homepage": "https://github.com/lucaslz2020/cra-ts-lerna-antd#readme",
+  "license": "ISC",
+  "main": "lib/business.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://192.168.1.20:4873/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslz2020/cra-ts-lerna-antd.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lucaslz2020/cra-ts-lerna-antd/issues"
+  },
+  "dependencies": {
+    "common": "0.0.0"
+  }
+}
